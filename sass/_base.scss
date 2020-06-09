@@ -1,0 +1,106 @@
+// ########### VARIABLES ###################
+
+$color-primary: #0084bf;
+$color-primary-light: #0c8996;
+$color-primary-light-1: #5093b3;
+$color-primary-light-2: #ffffff;
+
+$color-primary-dark: #009688;
+
+$color-gray-1: #dfe6e9;
+$color-gray-2: #b2bec3;
+$color-gray-3: #636e727e;
+
+$color-dark: #2d3436;
+$color-light: #ecf0f1;
+$color-light-1: #fafafa;
+$color-light-2: #d3d3d32a;
+
+
+
+$shadow: 0 1rem 2.2rem rgba(0,0,0, .4);
+$shadow-small: 0 .5rem 2rem rgba(0,0,0, .6);
+
+$bg-color-main: linear-gradient(45deg,#0084bf,#0c8996 50%);
+
+// ########### Media Screens ###################
+
+$phone-xs: 480px;
+$phone-sm: 660px;
+$phone: 768px; 
+$tab-port: 900px;
+$tab-land: 1200px;
+$laptop: 1800px;
+
+// ########### Animation ###################
+
+@keyframes leftIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    90% {
+        opacity: .9;
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightIn {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    90% {
+        opacity: .9;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bottomIn {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    90% {
+        opacity: .9;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// ########### BASE SETINGS ###################
+* {
+    padding: 0;
+    margin: 0;   
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;;
+    font-size: 1.7rem;
+    color: $color-dark;
+    line-height: 1.6;
+    font-weight: 400;
+}

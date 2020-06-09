@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Junior web developer">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio">
+    <meta name="author" content="Ivan Veskovic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Veskovic | Welcome</title>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="preloader">
+        <img src="img/preloader.png" alt="Preloader">
+    </div>
+
+    <header id="header">
+        <!-- 'Logo' and navigation -->
+        <nav class="navigation">
+                <a href="#header" class="navigation__name">
+                    Ivan Vesković
+                </a>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#header" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#section-skills" class="navigation__link">Skills</a></li>
+                    <li class="navigation__item"><a href="#section-projects" class="navigation__link">Projects</a></li>
+                    <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact</a></li>
+                </ul>
+
+                <!-- Mobile navigation -->
+                <ul class="navigation__mob-list">
+                    <li class="navigation__mob-item"><a href="#header" class="navigation__mob-link">Home</a></li>
+                    <li class="navigation__mob-item"><a href="#section-about" class="navigation__mob-link">About</a></li>
+                    <li class="navigation__mob-item"><a href="#section-skills" class="navigation__mob-link">Skills</a></li>
+                    <li class="navigation__mob-item"><a href="#section-projects" class="navigation__mob-link">Projects</a></li>
+                    <li class="navigation__mob-item"><a href="#section-contact" class="navigation__mob-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-btn">
+                    <div class="nav-btn__menu">
+                        <div class="nav-btn__bar nav-btn__bar--1 active"></div>
+                        <div class="nav-btn__bar nav-btn__bar--2 active"></div>
+                        <div class="nav-btn__bar nav-btn__bar--3 active"></div>
+                    </div>
+                </div>
+        </nav>
+        <!-- /End of nav -->
+        
+        <div class="container">
+                <!-- Headings at center of page -->
+                <div class="heading-box">
+                    <h1 class="heading-box__main">
+                        Welcome to my portfolio site.
+                    </h1>
+                    <h2 class="heading-box__secondary">
+                        Ivan Vesković, Junior web developer.
+                    </h2>
+                    <a href="#section-contact" class="btn btn-primary">Contact Me</a>
+                </div>
+                <!-- End of headings -->
+
+        </div>
+    </header>
+
+    <section id="section-about">
+        <div class="container">
+            <h2 class="section-heading section-heading--green">
+                About Me
+            </h2>
+
+            <div class="about">
+
+                <div class="about__bg-text">
+                    About me
+                </div>
+                <img src="img/me.jpg" alt="Self pictire" class="about__img">
+
+                <div class="about__container">
+                    <p class="about__text">Hello, my name is Ivan, I'm a junior Front End Developer based in Belgrade. I describe myself as a courious and persistent team player. I am currently working as an associate in power engineering "Infrastruktura Zeleznice Srbije", but I set myself the task of returning to the path I started several years ago. </p>
+                    <p class="about__text">I graduated at "The Higher Education Technical School of Professional Studies" section IT in Novi Sad, where I learned the principles of web technologies and computer science. As I said, I wanted to get back on track, I started with self-study and training that went through various courses through popular web platforms. As time passes the desire grows more and more for specialization in this field.</p>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-skills">
+        <h1 class="section-heading section-heading--white">
+            Skills
+        </h1>
+        <div class="container">
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            html
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            html
+                        </div>
+                        <p class="skills__item--back__text">
+                            Creating HTML structure of the web page. Working with links, video and pictures elements, HTML5 semantic elements and build website base on designe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            CSS 
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            css
+                        </div>
+                        <p class="skills__item--back__text">
+                            Styling and positioning HTML elements, using animations for interactive web experience. Working with BEM methodology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            JavaScript 
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            js
+                        </div>
+                        <p class="skills__item--back__text">
+                            Data types, variables, functions, loops, conditional statements, arrays and array methods, algorithms, DOM manipulating, objects, inheritance, ES6, Async/Await.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            SCSS 
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            scss
+                        </div>
+                        <p class="skills__item--back__text">
+                            Using variables and creating mixins. Writing nested code for cleaner and easy experience. Modular project orientation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            Responsive design 
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            Rd
+                        </div>
+                        <p class="skills__item--back__text">
+                            Creating applications for different based screens using media queries and responsive principals. Building desktop and mobile first app.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            Bootstrap 
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            BT
+                        </div>
+                        <p class="skills__item--back__text">
+                            Using bootstrap components and classes. Working with grid. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            Flexbox & CSS Grid 
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            GRID
+                        </div>
+                        <p class="skills__item--back__text">
+                            Building application structure with Flexbox and CSS Grid. Positioning elements based on screen requirement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            Git & Github 
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            Git
+                        </div>
+                        <p class="skills__item--back__text">
+                            Good knowledge of GIT ecosystem, using command line and GIT commands. Sharing projects between two developing space.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            NPM & JSON 
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            N & J
+                        </div>
+                        <p class="skills__item--back__text">
+                            Working in node enviroment, using NPM packages and scripts. Working and manipulating with JSON data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+
+            <!-- Card for skills -->
+            <div class="skills">
+                <div class="skills__item">
+                    <div class="skills__item--front">
+                        <div class="skills__skill-name">
+                            Other 
+                        </div>
+                        <span class="skills__arrow">
+                            <i class="far fa-caret-square-down"></i>
+                        </span>
+                    </div>
+                    <div class="skills__item--back">
+                        <div class="skills__item--back__description">
+                            other
+                        </div>
+                        <p class="skills__item--back__text">
+                            Familiar with C# and SQL queries. Working in VS Code and Bracket. Understand main principals of OOP programing. English - Mid Level.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card -->
+            
+
+
+        </div>
+    </section>
+
+    <section id="section-projects">
+        <h1 class="section-heading section-heading--green" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">Projects</h1>
+        <div class="projects">
+            <!-- Project item -->
+            <div class="projects__box">
+                <div class="projects__box__description">
+                    Project Name 1
+                    <a href="#" class="projects__box__description-link"><i class="fab fa-github"></i></a>
+                </div>
+                
+                <img src="img/project-1.jpg" alt="Project" class="projects__box__img">
+            </div>
+            <!-- End of project item -->
+            <!-- Project item -->
+            <div class="projects__box">
+                <div class="projects__box__description">
+                    Project Name 2
+                    <a href="#" class="projects__box__description-link"><i class="fab fa-github"></i></a>
+                </div>
+                
+                <img src="img/project-2.jpg" alt="Project" class="projects__box__img">
+            </div>
+            <!-- End of project item -->
+            <!-- Project item -->
+            <div class="projects__box">
+                <div class="projects__box__description">
+                    Project Name 3
+                    <a href="#" class="projects__box__description-link"><i class="fab fa-github"></i></a>
+                </div>
+                
+                <img src="img/project-3.jpg" alt="Project" class="projects__box__img">
+            </div>
+            <!-- End of project item -->
+            <!-- Project item -->
+            <div class="projects__box">
+                <div class="projects__box__description">
+                    Project Name 4
+                    <a href="#" class="projects__box__description-link"><i class="fab fa-github"></i></a>
+                </div>
+                
+                <img src="img/project-4.jpg" alt="Project" class="projects__box__img">
+            </div>
+            <!-- End of project item -->
+        </div>
+        
+
+        <div class="more">
+            <a href="https://github.com/IvanVeskovic?tab=repositories" target="_blank" class="btn btn-projects">More projects<i class="fab fa-github"></i></a> 
+        </div>
+        
+    </section>
+
+    <section id="section-contact">
+        <div class="container">
+            <h3 class="small-heading">
+                You can contact me
+            </h3>
+            <div class="contact">
+                <ul class="contact-list">
+                    <!-- List item -->
+                    <li class="contact-list__item">
+                        <a href="mailto: i.veskovic92@gmail.com" class="contact-list__link"><span class="contact-list__text">i.veskovic92@gmail.com</span><i class="fas fa-envelope contact-list__icon"></i></a>
+                    </li>
+                    <!-- End of list item -->
+                    <!-- List item -->
+                    <li class="contact-list__item">
+                        <a href="tel:062208646" class="contact-list__link"><span class="contact-list__text">062/208-646</span><i class="fas fa-phone contact-list__icon"></i></a>
+                    </li>
+                    <!-- End of list item -->
+                    <!-- List item -->
+                    <li class="contact-list__item">
+                        <a href="https://www.linkedin.com/in/ivan-veskovic-8b1573127/" target="_blank" class="contact-list__link"><i class="fab fa-linkedin contact-list__icon"></i></a>
+                    </li>
+                    <!-- End of list item -->
+                    <!-- List item -->
+                    <li class="contact-list__item">
+                        <a href="https://github.com/IvanVeskovic?tab=repositories" target="_blank" class="contact-list__link"><i class="fab fa-github-square contact-list__icon"></i></a>
+                    </li>
+                    <!-- End of list item -->
+                </ul>
+
+                <a href="secondary/iv_cv.pdf" download class="btn btn-primary"><i class="fas fa-download"></i> Dowonload CV</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/bc81d2e5c5.js" crossorigin="anonymous"></script>
+    
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
