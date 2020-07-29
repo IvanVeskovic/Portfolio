@@ -60,7 +60,7 @@ body {
   position: fixed;
   height: 100%;
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: #0c8996;
@@ -200,8 +200,7 @@ section {
       top: 50%; } }
   .heading-box__main {
     font-size: 5.5rem;
-    letter-spacing: .3rem;
-    animation: leftIn .8s  1.5s; }
+    letter-spacing: .3rem; }
     @media only screen and (max-width: 1200px) {
       .heading-box__main {
         font-size: 5rem; } }
@@ -216,8 +215,7 @@ section {
         color: #fff; } }
   .heading-box__secondary {
     font-size: 3rem;
-    letter-spacing: .2rem;
-    animation: rightIn 1.8s ease 1.5s; }
+    letter-spacing: .2rem; }
     @media only screen and (max-width: 1200px) {
       .heading-box__secondary {
         font-size: 2.5rem; } }
@@ -265,8 +263,7 @@ section {
   padding: 1rem 3rem;
   text-decoration: none;
   transition: all .2s;
-  border-radius: 5px;
-  animation: bottomIn .8s ease 1.5s; }
+  border-radius: 5px; }
 
 .btn:hover, .btn:focus {
   box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, 0.4);

@@ -8,13 +8,13 @@ const about = document.getElementById('section-about').offsetTop;
 
 // Preloader 
 
-window.addEventListener('load', function() {
-    this.setTimeout(() => {
-        document.querySelector('.preloader').style.display= 'none';
+// window.addEventListener('load', function() {
+//     this.setTimeout(() => {
+//         document.querySelector('.preloader').style.display= 'none';
         
-    }, 1500)
+//     }, 1500)
     
-})
+// })
 
 
 // Trigger for navbar background and hide

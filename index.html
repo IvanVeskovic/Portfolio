@@ -9,6 +9,8 @@
     <title>Ivan Veskovic | Welcome</title>
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -54,13 +56,13 @@
         <div class="container">
                 <!-- Headings at center of page -->
                 <div class="heading-box">
-                    <h1 class="heading-box__main">
+                    <h1 class="heading-box__main" data-aos="fade-left" data-aos-duration="800">
                         Welcome to my portfolio site.
                     </h1>
-                    <h2 class="heading-box__secondary">
+                    <h2 class="heading-box__secondary" data-aos="fade-right" data-aos-duration="800">
                         Ivan Vesković, Junior web developer.
                     </h2>
-                    <a href="#section-contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#section-contact" class="btn btn-primary" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">Contact Me</a>
                 </div>
                 <!-- End of headings -->
 
@@ -69,7 +71,7 @@
 
     <section id="section-about">
         <div class="container">
-            <h2 class="section-heading section-heading--green">
+            <h2 class="section-heading section-heading--green" data-aos="fade-up" data-aos-duration="800">
                 About Me
             </h2>
 
@@ -78,9 +80,9 @@
                 <div class="about__bg-text">
                     About me
                 </div>
-                <img src="img/me.jpg" alt="Self pictire" class="about__img">
+                <img src="img/me.jpg" alt="Self pictire" class="about__img" data-aos="fade-right" data-aos-duration="800">
 
-                <div class="about__container">
+                <div class="about__container" data-aos="fade-left" data-aos-duration="800">
                     <p class="about__text">Hello, my name is Ivan, I'm a junior Front End Developer based in Belgrade. I describe myself as a courious and persistent team player. I am currently working as an associate in power engineering "Infrastruktura Zeleznice Srbije", but I set myself the task of returning to the path I started several years ago. </p>
                     <p class="about__text">I graduated at "The Higher Education Technical School of Professional Studies" section IT in Novi Sad, where I learned the principles of web technologies and computer science. As I said, I wanted to get back on track, I started with self-study and training that went through various courses through popular web platforms. As time passes the desire grows more and more for specialization in this field.</p>
                 </div>
@@ -91,10 +93,10 @@
     </section>
 
     <section id="section-skills">
-        <h1 class="section-heading section-heading--white">
+        <h1 class="section-heading section-heading--white" data-aos="fade-up" data-aos-duration="800">
             Skills
         </h1>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="800">
             <!-- Card for skills -->
             <div class="skills">
                 <div class="skills__item">
@@ -324,44 +326,43 @@
     </section>
 
     <section id="section-projects">
-        <h1 class="section-heading section-heading--green" data-aos="fade-up"
-        data-aos-anchor-placement="top-center">Projects</h1>
+        <h1 class="section-heading section-heading--green" data-aos="fade-up" data-aos-duration="800">Projects</h1>
         <div class="projects">
             <!-- Project item -->
-            <div class="projects__box">
+            <div class="projects__box" data-aos="fade-up" data-aos-duration="800">
                 <div class="projects__box__description">
-                    Project Name 1
-                    <a href="#" class="projects__box__description-link"><i class="fab fa-github"></i></a>
+                    Moiblie Shop
+                    <a href="https://github.com/IvanVeskovic/mobil_shop" class="projects__box__description-link"  target="_blank"><i class="fab fa-github"></i></a>
                 </div>
                 
                 <img src="img/project-1.jpg" alt="Project" class="projects__box__img">
             </div>
             <!-- End of project item -->
             <!-- Project item -->
-            <div class="projects__box">
+            <div class="projects__box" data-aos="fade-down" data-aos-duration="800">
                 <div class="projects__box__description">
                     Project Name 2
-                    <a href="#" class="projects__box__description-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="projects__box__description-link"><i class="fab fa-github" target="_blank"></i></a>
                 </div>
                 
                 <img src="img/project-2.jpg" alt="Project" class="projects__box__img">
             </div>
             <!-- End of project item -->
             <!-- Project item -->
-            <div class="projects__box">
+            <div class="projects__box" data-aos="fade-up" data-aos-duration="800">
                 <div class="projects__box__description">
                     Project Name 3
-                    <a href="#" class="projects__box__description-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="projects__box__description-link"><i class="fab fa-github" target="_blank"></i></a>
                 </div>
                 
                 <img src="img/project-3.jpg" alt="Project" class="projects__box__img">
             </div>
             <!-- End of project item -->
             <!-- Project item -->
-            <div class="projects__box">
+            <div class="projects__box" data-aos="fade-down" data-aos-duration="800">
                 <div class="projects__box__description">
                     Project Name 4
-                    <a href="#" class="projects__box__description-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="projects__box__description-link"><i class="fab fa-github" target="_blank"></i></a>
                 </div>
                 
                 <img src="img/project-4.jpg" alt="Project" class="projects__box__img">
@@ -371,7 +372,7 @@
         
 
         <div class="more">
-            <a href="https://github.com/IvanVeskovic?tab=repositories" target="_blank" class="btn btn-projects">More projects<i class="fab fa-github"></i></a> 
+            <a href="https://github.com/IvanVeskovic?tab=repositories" target="_blank" class="btn btn-projects" data-aos="fade-up" data-aos-duration="800">More projects<i class="fab fa-github"></i></a> 
         </div>
         
     </section>
@@ -412,7 +413,13 @@
     
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/bc81d2e5c5.js" crossorigin="anonymous"></script>
-    
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init() 
+    </script>
+
     <!-- Main JS -->
     <script src="js/script.js"></script>
 
