@@ -8,11 +8,10 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: $color-primary-light;
-
     z-index: 9999;
 }
 
