@@ -44,10 +44,12 @@ changeNavbarColor = (currPos) => {
     }
 }
 
+
+// ########################## LISTENERS ################################
+
 // Toggle mobile navigation
 navBarBtn.addEventListener('click', function(e){
     e.preventDefault();
-
 
     if(mobiNav.style.visibility === 'hidden') {
       mobiNav.style.visibility = 'visible';
