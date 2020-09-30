@@ -6,17 +6,6 @@ const bars = document.querySelectorAll('.nav-btn__bar');
 
 const about = document.getElementById('section-about').offsetTop;
 
-// Preloader 
-
-window.addEventListener('load', function() {
-    this.setTimeout(() => {
-        document.querySelector('.preloader').style.display= 'none';
-        
-    }, 1500)
-    
-})
-
-
 // Trigger for navbar background and hide
 window.onscroll = () => {
     let currentScrollPos = window.pageYOffset;
@@ -44,8 +33,6 @@ changeNavbarColor = (currPos) => {
     }
 }
 
-
-// ########################## LISTENERS ################################
 
 // Toggle mobile navigation
 navBarBtn.addEventListener('click', function(e){
@@ -75,7 +62,18 @@ navBarBtn.addEventListener('click', function(e){
     }
 })
 
+// Preloader 
 
+window.addEventListener('load', function() {
+    this.setTimeout(() => {
+        document.querySelector('.preloader').style.display= 'none';
+        
+    }, 1500)
+    
+})
+
+
+// Mobile sklills
 document.querySelector('#section-skills').addEventListener('click', function(e) {
     const arrowDown = `<i class="far fa-caret-square-down"></i>`;
     const arrowUp = `<i class="far fa-caret-square-up"></i>`;
