@@ -571,9 +571,10 @@
             }
         }
 
+        
+
         &__link:hover &__icon {
             transform: translateY(-4px) scale(1.1);
-            color: transparent;
         }
 
         &__text {
@@ -592,7 +593,7 @@
             padding: 0;
             backface-visibility: hidden;
 
-            background-image: linear-gradient(to right bottom, rgba(#fff, .9), rgba(#fafafa, .3));
+            background-color: #fff;
             -webkit-background-clip: text;
             background-clip: text;
 
