@@ -17,8 +17,9 @@
     top: 0;
     width: 100vw;
     transition: all .3s;
-    z-index: 1000;
+    z-index: 9000;
     align-self: stretch;
+    font-weight: 700;
 
     overflow: hidden;
 
@@ -30,7 +31,7 @@
     }
 
     
-    &__name {
+    &__logo {
         &:link,
         &:visited {
             align-items: center;
@@ -43,12 +44,18 @@
             // display: inline-block;
             color: inherit;
             text-decoration: none;
-            transition: all .2s;  
+            transition: all .2s;
+            height: 100%;
 
             @media only screen and (max-width: $phone) {
                 flex-direction: column;
                 height: auto;
             }
+        }
+
+        &__img {
+            // display: block;
+            height: 4rem;
         }
         
 
@@ -93,10 +100,13 @@
         align-items: stretch;
         padding: 0 1rem;
         text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.4rem;
+
         
 
         &:not(:last-child) {
-            margin-right: 1rem;
+            margin-right: .5rem;
         }
 
         &:hover {
@@ -111,7 +121,7 @@
         &:visited {
             text-decoration: none;
             color: inherit;
-            font-size: 1.4rem;
+            font-size: inherit;
             letter-spacing: .2rem;
             padding: .5rem;
             transition: all .2s;
@@ -131,13 +141,33 @@
 // ########### Header ##################
 
 #header {
-    background: linear-gradient(to right bottom, rgba($color-primary-dark, 1), rgba($color-primary, 0.6)), url(../img/landpage.jpg);
+    background: linear-gradient(to right bottom, rgba($color-primary-dark, .6), rgba($color-primary, 0.6)), url(../img/landpage.jpg);
+    // background: url("../img/landpage-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
-    // width: 100vw;
+    position: relative;
+    height: 95vh;
+    // -webkit-clip-path: ellipse(100% 55% at 48% 44%);
+    //         clip-path: ellipse(100% 55% at 48% 44%);
+    // position: relative;
+    // z-index: 1;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 20rem;
+        position: absolute;
+        bottom: 0;
+        // top: 50%;
+        left: 0;
+        background: url("../img/Rectangle-1.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 // ########### Sections ###############
@@ -150,8 +180,6 @@ section {
 // ########### About ##################
 
 #section-about {
-    // background-color: $color-light-1;
-    background: url(../img/paper_fibers.png);
     background-size: auto;
     background-repeat: repeat;
     overflow: hidden;
@@ -176,9 +204,6 @@ section {
 
 #section-projects {
     width: 100%;
-    // background-color: $color-primary-light-2;
-
-    background: url(../img/paper_fibers.png);
     background-size: auto;
     background-repeat: repeat;
 }

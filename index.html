@@ -6,6 +6,14 @@
     <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio">
     <meta name="author" content="Ivan Veskovic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="secondary/fav-icons/">
+    <link rel="icon" type="image/png" sizes="32x32" href="secondary/fav-icons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="secondary/fav-icons//favicon-16x16.png">
+    <link rel="manifest" href="secondary/fav-icons//site.webmanifest">
+    <link rel="mask-icon" href="secondary/fav-icons//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> 
     <title>Ivan Veskovic | Welcome</title>
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700&display=swap" rel="stylesheet">
@@ -17,21 +25,32 @@
 <body>
 
     <div class="preloader">
-        <img src="img/preloader.png" alt="Preloader">
+        <div class="preloader__container">
+            <span class="preloader__letter preloader__letter--1"> &lt; </span>
+            <span class="preloader__letter preloader__letter--2">c</span>
+            <span class="preloader__letter preloader__letter--3">o</span>
+            <span class="preloader__letter preloader__letter--4">d</span>
+            <span class="preloader__letter preloader__letter--5">i</span>
+            <span class="preloader__letter preloader__letter--6">n</span>
+            <span class="preloader__letter preloader__letter--7">g</span>
+            <span class="preloader__letter preloader__letter--8"> &gt; </span>
+
+        </div>
     </div>
 
     <header id="header">
         <!-- 'Logo' and navigation -->
         <nav class="navigation">
-                <a href="#header" class="navigation__name">
-                    Ivan Vesković
+                <a href="#header" class="navigation__logo">
+                    <img src="img/logo.png" alt="logo" class="navigation__logo__img">
                 </a>
-                <ul class="navigation__list">
+                <ul class="navigation__list"> 
                     <li class="navigation__item"><a href="#header" class="navigation__link">Home</a></li>
                     <li class="navigation__item"><a href="#section-about" class="navigation__link">About</a></li>
                     <li class="navigation__item"><a href="#section-skills" class="navigation__link">Skills</a></li>
                     <li class="navigation__item"><a href="#section-projects" class="navigation__link">Projects</a></li>
                     <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact</a></li>
+                    <li class="navigation__item resume-color"><a href="secondary/iv_cv.pdf" download class="navigation__link">CV</a></li>
                 </ul>
 
                 <!-- Mobile navigation -->
@@ -41,6 +60,7 @@
                     <li class="navigation__mob-item"><a href="#section-skills" class="navigation__mob-link">Skills</a></li>
                     <li class="navigation__mob-item"><a href="#section-projects" class="navigation__mob-link">Projects</a></li>
                     <li class="navigation__mob-item"><a href="#section-contact" class="navigation__mob-link">Contact</a></li>
+                    <li class="navigation__mob-item resume-color"><a href="secondary/iv_cv.pdf"  download class="navigation__mob-link ">Resume</a></li>
                 </ul>
 
                 <div class="nav-btn">
@@ -60,13 +80,15 @@
                         Welcome to my portfolio site.
                     </h1>
                     <h2 class="heading-box__secondary" data-aos-delay="1500" data-aos="fade-right" data-aos-duration="1200" data-aos-offset="0">
-                        Ivan Vesković, Junior web developer.
+                        Ivan Vesković, Junior Frontend Developer.
                     </h2>
                     <a href="#section-contact" class="btn btn-primary" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1200" data-aos-offset="0">Contact Me</a>
                 </div>
                 <!-- End of headings -->
-
         </div>
+
+        <a href="#section-about" class="scroll-btn" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="1200" data-aos-offset="0"></a>
+
     </header>
 
     <section id="section-about">

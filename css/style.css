@@ -31,6 +31,25 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes scroll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(15px); } }
+
+@keyframes shakeIt {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateY(-2.5rem); } }
+
+@keyframes rotateIt {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
 * {
   padding: 0;
   margin: 0; }
@@ -67,8 +86,9 @@ body {
   top: 0;
   width: 100vw;
   transition: all .3s;
-  z-index: 1000;
+  z-index: 9000;
   align-self: stretch;
+  font-weight: 700;
   overflow: hidden; }
   @media only screen and (max-width: 768px) {
     .navigation {
@@ -76,7 +96,7 @@ body {
       align-items: flex-start;
       height: auto;
       background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); } }
-  .navigation__name:link, .navigation__name:visited {
+  .navigation__logo:link, .navigation__logo:visited {
     align-items: center;
     display: flex;
     padding: 2rem 1rem;
@@ -86,12 +106,15 @@ body {
     text-transform: uppercase;
     color: inherit;
     text-decoration: none;
-    transition: all .2s; }
+    transition: all .2s;
+    height: 100%; }
     @media only screen and (max-width: 768px) {
-      .navigation__name:link, .navigation__name:visited {
+      .navigation__logo:link, .navigation__logo:visited {
         flex-direction: column;
         height: auto; } }
-  .navigation__name:hover {
+  .navigation__logo__img {
+    height: 4rem; }
+  .navigation__logo:hover {
     background-color: rgba(236, 240, 241, 0.3); }
   .navigation__list, .navigation__mob-list {
     list-style: none;
@@ -117,15 +140,17 @@ body {
     display: flex;
     align-items: stretch;
     padding: 0 1rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.4rem; }
     .navigation__item:not(:last-child), .navigation__mob-item:not(:last-child) {
-      margin-right: 1rem; }
+      margin-right: .5rem; }
     .navigation__item:hover, .navigation__mob-item:hover {
       background-color: rgba(236, 240, 241, 0.3); }
   .navigation__link:link, .navigation__link:visited, .navigation__mob-link:link, .navigation__mob-link:visited {
     text-decoration: none;
     color: inherit;
-    font-size: 1.4rem;
+    font-size: inherit;
     letter-spacing: .2rem;
     padding: .5rem;
     transition: all .2s;
@@ -135,19 +160,31 @@ body {
     transform: translateY(-3px); }
 
 #header {
-  background: linear-gradient(to right bottom, #009688, rgba(0, 132, 191, 0.6)), url(../img/landpage.jpg);
+  background: linear-gradient(to right bottom, rgba(0, 150, 136, 0.6), rgba(0, 132, 191, 0.6)), url(../img/landpage.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh; }
+  position: relative;
+  height: 95vh; }
+  #header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../img/Rectangle-1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 section {
   padding: 6rem 0;
   position: relative; }
 
 #section-about {
-  background: url(../img/paper_fibers.png);
   background-size: auto;
   background-repeat: repeat;
   overflow: hidden;
@@ -163,7 +200,6 @@ section {
 
 #section-projects {
   width: 100%;
-  background: url(../img/paper_fibers.png);
   background-size: auto;
   background-repeat: repeat; }
 
@@ -184,6 +220,78 @@ section {
   align-items: center;
   background-color: #0c8996;
   z-index: 9999; }
+  .preloader__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 10px;
+    width: 30rem;
+    height: 30rem;
+    padding: 5rem;
+    position: relative; }
+    .preloader__container::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 101%;
+      width: 101%;
+      border-left: solid 10px #ecf0f1;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      animation-name: rotateIt;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite; }
+  .preloader__letter {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    background: linear-gradient(to right, #ecf0f1, #ecf0f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    .preloader__letter--1 {
+      animation-name: shakeIt;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-delay: 0s; }
+    .preloader__letter--2 {
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: shakeIt;
+      animation-delay: .1s; }
+    .preloader__letter--3 {
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: shakeIt;
+      animation-delay: .2s; }
+    .preloader__letter--4 {
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: shakeIt;
+      animation-delay: .3s; }
+    .preloader__letter--5 {
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: shakeIt;
+      animation-delay: .4s; }
+    .preloader__letter--6 {
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: shakeIt;
+      animation-delay: .5s; }
+    .preloader__letter--7 {
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: shakeIt;
+      animation-delay: .6s; }
+    .preloader__letter--8 {
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: shakeIt;
+      animation-delay: .7s; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -203,7 +311,7 @@ section {
   transform: translateY(-0.1rem); }
 
 .btn-primary:link, .btn-primary:visited {
-  border: 1px solid #ecf0f1;
+  border: 2px solid #ecf0f1;
   position: relative;
   overflow: hidden;
   transition: all .3s;
@@ -235,7 +343,7 @@ section {
 
 .nav-btn {
   position: absolute;
-  top: 1.8rem;
+  top: 2.4rem;
   right: 3rem;
   display: none; }
   @media only screen and (max-width: 768px) {
@@ -266,9 +374,40 @@ section {
       transform: translateX(50px);
       opacity: 0; }
 
+.scroll-btn {
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 40px;
+  margin-left: -20px;
+  top: 85%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 2px #ecf0f1;
+  border-radius: 25px;
+  z-index: 1; }
+  .scroll-btn::before {
+    position: absolute;
+    left: 50%;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #ecf0f1;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+    animation-name: scroll; }
+
 .active {
   transform: rotate(0) translateX(0);
   opacity: 1; }
+
+.resume-color {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.7rem;
+  background: #0084bf; }
 
 .heading-box {
   position: absolute;
@@ -284,7 +423,7 @@ section {
     .heading-box {
       top: 50%; } }
   .heading-box__main {
-    font-size: 5.5rem;
+    font-size: 5rem;
     letter-spacing: .3rem; }
     @media only screen and (max-width: 1200px) {
       .heading-box__main {
@@ -294,12 +433,12 @@ section {
         font-size: 4.2rem; } }
   .heading-box__main, .heading-box__secondary {
     color: #ecf0f1;
-    font-weight: 300; }
+    font-weight: 400; }
     @media only screen and (max-width: 768px) {
       .heading-box__main, .heading-box__secondary {
         color: #fff; } }
   .heading-box__secondary {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: .2rem; }
     @media only screen and (max-width: 1200px) {
       .heading-box__secondary {
@@ -311,7 +450,8 @@ section {
 .section-heading {
   text-align: center;
   font-size: 5rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-style: italic;
   letter-spacing: .3rem;
   margin-bottom: 8rem;
   position: relative;
@@ -330,7 +470,7 @@ section {
     top: 7rem;
     left: 50%;
     transform: translateX(-50%);
-    height: .1rem;
+    height: .2rem;
     width: 10rem;
     margin-top: 2rem; }
 
@@ -338,7 +478,8 @@ section {
   font-size: 3rem;
   margin-bottom: 3rem;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
+  font-style: italic;
   color: #fff; }
 
 .about {

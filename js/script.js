@@ -26,9 +26,9 @@ hideNavbar = (currPos) => {
 
 // Change color of navbar when hit about section
 changeNavbarColor = (currPos) => {
-    if(about - 60 < currPos) {
+    if(about - 120 < currPos) {
         navBar.style.backgroundColor = 'rgba(0, 132, 191, 0.6)';
-    } else if (about - 60 > currPos) {
+    } else if (about - 120 > currPos) {
         navBar.style.backgroundColor = 'transparent';
     }
 }
@@ -63,7 +63,6 @@ navBarBtn.addEventListener('click', function(e){
 })
 
 // Preloader 
-
 window.addEventListener('load', function() {
     this.setTimeout(() => {
         document.querySelector('.preloader').style.display= 'none';

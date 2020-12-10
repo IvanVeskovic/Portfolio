@@ -79,6 +79,41 @@ $laptop: 1800px;
     }
 }
 
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+}
+
+
+@keyframes shakeIt {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-2.5rem);}
+
+    // 0% {transform: translateX(2.5rem);}
+    // 100% {transform: translateY(0);}
+
+    // 0% {transform: rotate(0);}
+    // 100% {transform: rotate(360deg);}
+
+    // 0% {color: black;}
+    // 100% {color: red;}
+
+    
+}
+
+@keyframes rotateIt {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 // ########### BASE SETINGS ###################
 * {
     padding: 0;
