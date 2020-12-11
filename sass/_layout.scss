@@ -30,7 +30,6 @@
         height: auto;
         // background: linear-gradient(to right, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
         background: rgba($color-primary, 0.9);
-
     }
 
     
@@ -51,8 +50,9 @@
             height: 100%;
 
             @media only screen and (max-width: $phone) {
-                flex-direction: column;
-                height: auto;
+                // flex-direction: column;
+                // height: auto;
+                padding: 1rem;
             }
         }
 

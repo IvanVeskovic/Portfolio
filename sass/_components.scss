@@ -163,6 +163,9 @@
         transition: all .2s;
         border-radius: 5px;
 
+        @media only screen and (max-width: $phone) {
+                padding: .8rem 2rem; 
+            }
     }
 
     &:hover,
@@ -224,7 +227,7 @@
 
 .nav-btn {
     position: absolute;
-    top: 2.4rem;
+    top: 1.8rem;
     right: 3rem;
 
     display: none;

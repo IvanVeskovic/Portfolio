@@ -35,8 +35,6 @@ changeNavbarColor = (currPos) => {
     } else {
         navBar.style.backgroundColor = 'rgba(0, 132, 191, 0.9)';
     }
-
-    
 }
 
 
