@@ -272,4 +272,9 @@
     font-weight: 700;
     font-size: 1.7rem;
     background: $color-primary;
+
+    @media only screen and (max-width: $phone) {
+        background: $color-light;
+        color: $color-primary;
+    }
 }

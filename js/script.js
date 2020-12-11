@@ -26,10 +26,14 @@ hideNavbar = (currPos) => {
 
 // Change color of navbar when hit about section
 changeNavbarColor = (currPos) => {
-    if(about - 120 < currPos) {
-        navBar.style.backgroundColor = 'rgba(0, 132, 191, 0.6)';
-    } else if (about - 120 > currPos) {
-        navBar.style.backgroundColor = 'transparent';
+    if(innerWidth >= 768) {
+        if(about - 120 < currPos) {
+            navBar.style.backgroundColor = 'rgba(0, 132, 191, 0.6)';
+        } else if (about - 120 > currPos) {
+            navBar.style.backgroundColor = 'transparent';
+        }
+    } else {
+        navBar.style.backgroundColor = 'rgba(0, 132, 191, 0.9)';
     }
 }
 
@@ -66,10 +70,16 @@ navBarBtn.addEventListener('click', function(e){
 window.addEventListener('load', function() {
     this.setTimeout(() => {
         document.querySelector('.preloader').style.display= 'none';
-        
     }, 1500)
     
 })
+
+// Init header animations
+// const initHeaderAnimations = () => {
+//     const h1 = document.querySelector('.heading-box__main').sty.display = 'block';
+//     const h2 = document.querySelector('.heading-box__secondary').sty.display = 'block';
+//     const contact = document.querySelector('#contact').sty.display = 'block';
+// }
 
 
 // Mobile sklills

@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Junior web developer">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio">
+    <meta name="description" content="Junior frontend developer">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio,frontend, developer, junior">
     <meta name="author" content="Ivan Veskovic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fav icon -->
@@ -38,40 +38,42 @@
         </div>
     </div>
 
+    <nav class="navigation">
+        <a href="#header" class="navigation__logo">
+            <img src="img/logo.png" alt="logo" class="navigation__logo__img">
+        </a>
+        <ul class="navigation__list"> 
+            <li class="navigation__item"><a href="#header" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="#section-about" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="#section-skills" class="navigation__link">Skills</a></li>
+            <li class="navigation__item"><a href="#section-projects" class="navigation__link">Projects</a></li>
+            <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact</a></li>
+            <li class="navigation__item resume-color"><a href="secondary/iv_cv.pdf" download class="navigation__link">CV</a></li>
+        </ul>
+
+        <!-- Mobile navigation -->
+        <ul class="navigation__mob-list">
+            <li class="navigation__mob-item"><a href="#header" class="navigation__mob-link">Home</a></li>
+            <li class="navigation__mob-item"><a href="#section-about" class="navigation__mob-link">About</a></li>
+            <li class="navigation__mob-item"><a href="#section-skills" class="navigation__mob-link">Skills</a></li>
+            <li class="navigation__mob-item"><a href="#section-projects" class="navigation__mob-link">Projects</a></li>
+            <li class="navigation__mob-item"><a href="#section-contact" class="navigation__mob-link">Contact</a></li>
+            <li class="navigation__mob-item resume-color"><a href="secondary/iv_cv.pdf"  download class="navigation__mob-link ">Resume</a></li>
+        </ul>
+
+        <div class="nav-btn">
+            <div class="nav-btn__menu">
+                <div class="nav-btn__bar nav-btn__bar--1 active"></div>
+                <div class="nav-btn__bar nav-btn__bar--2 active"></div>
+                <div class="nav-btn__bar nav-btn__bar--3 active"></div>
+            </div>
+        </div>
+</nav>
+<!-- /End of nav -->
+
     <header id="header">
         <!-- 'Logo' and navigation -->
-        <nav class="navigation">
-                <a href="#header" class="navigation__logo">
-                    <img src="img/logo.png" alt="logo" class="navigation__logo__img">
-                </a>
-                <ul class="navigation__list"> 
-                    <li class="navigation__item"><a href="#header" class="navigation__link">Home</a></li>
-                    <li class="navigation__item"><a href="#section-about" class="navigation__link">About</a></li>
-                    <li class="navigation__item"><a href="#section-skills" class="navigation__link">Skills</a></li>
-                    <li class="navigation__item"><a href="#section-projects" class="navigation__link">Projects</a></li>
-                    <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact</a></li>
-                    <li class="navigation__item resume-color"><a href="secondary/iv_cv.pdf" download class="navigation__link">CV</a></li>
-                </ul>
 
-                <!-- Mobile navigation -->
-                <ul class="navigation__mob-list">
-                    <li class="navigation__mob-item"><a href="#header" class="navigation__mob-link">Home</a></li>
-                    <li class="navigation__mob-item"><a href="#section-about" class="navigation__mob-link">About</a></li>
-                    <li class="navigation__mob-item"><a href="#section-skills" class="navigation__mob-link">Skills</a></li>
-                    <li class="navigation__mob-item"><a href="#section-projects" class="navigation__mob-link">Projects</a></li>
-                    <li class="navigation__mob-item"><a href="#section-contact" class="navigation__mob-link">Contact</a></li>
-                    <li class="navigation__mob-item resume-color"><a href="secondary/iv_cv.pdf"  download class="navigation__mob-link ">Resume</a></li>
-                </ul>
-
-                <div class="nav-btn">
-                    <div class="nav-btn__menu">
-                        <div class="nav-btn__bar nav-btn__bar--1 active"></div>
-                        <div class="nav-btn__bar nav-btn__bar--2 active"></div>
-                        <div class="nav-btn__bar nav-btn__bar--3 active"></div>
-                    </div>
-                </div>
-        </nav>
-        <!-- /End of nav -->
         
         <div class="container">
                 <!-- Headings at center of page -->
@@ -82,7 +84,7 @@
                     <h2 class="heading-box__secondary" data-aos-delay="1500" data-aos="fade-right" data-aos-duration="1200" data-aos-offset="0">
                         Ivan Vesković, Junior Frontend Developer.
                     </h2>
-                    <a href="#section-contact" class="btn btn-primary" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1200" data-aos-offset="0">Contact Me</a>
+                    <a id="contact" href="#section-contact" class="btn btn-primary" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1200" data-aos-offset="0">Contact Me</a>
                 </div>
                 <!-- End of headings -->
         </div>
