@@ -32,6 +32,32 @@ $tab-port: 900px;
 $tab-land: 1200px;
 $laptop: 1800px;
 
+// ########### BASE SETINGS ###################
+* {
+    padding: 0;
+    margin: 0;   
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;;
+    font-size: 1.7rem;
+    color: $color-dark;
+    line-height: 1.6;
+    font-weight: 400;
+    position: relative;
+}
 // ########### Animation ###################
 
 @-webkit-keyframes leftIn {
@@ -194,29 +220,4 @@ $laptop: 1800px;
     to {
         transform: rotate(360deg);
     }
-}
-// ########### BASE SETINGS ###################
-* {
-    padding: 0;
-    margin: 0;   
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-html {
-    box-sizing: border-box;
-    font-size: 62.5%; // 1rem = 10px
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Lato', sans-serif;;
-    font-size: 1.7rem;
-    color: $color-dark;
-    line-height: 1.6;
-    font-weight: 400;
 }
