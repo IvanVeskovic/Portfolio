@@ -17,8 +17,7 @@ body {
   font-size: 1.7rem;
   color: #2d3436;
   line-height: 1.6;
-  font-weight: 400;
-  position: relative; }
+  font-weight: 400; }
 
 @-webkit-keyframes leftIn {
   0% {
