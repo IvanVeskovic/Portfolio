@@ -218,7 +218,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
   height: 95vh;
   -webkit-clip-path: ellipse(100% 55% at 48% 44%);
   clip-path: ellipse(100% 55% at 48% 44%); }

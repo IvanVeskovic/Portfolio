@@ -26,14 +26,16 @@ hideNavbar = (currPos) => {
 
 // Change color of navbar when hit about section
 changeNavbarColor = (currPos) => {
-    if(innerWidth >= 768) {
-        if(about - 120 < currPos) {
-            navBar.style.backgroundColor = 'rgba(0, 132, 191, 0.6)';
-        } else if (about - 120 > currPos) {
-            navBar.style.backgroundColor = 'transparent';
-        }
-    } else {
-        navBar.style.backgroundColor = 'rgba(0, 132, 191, 0.9)';
+    // if(innerWidth >= 768) {
+        
+    // } else {
+    //     navBar.style.backgroundColor = 'rgba(0, 132, 191, 0.9)';
+    // }
+
+    if(about - 120 < currPos) {
+        navBar.style.backgroundColor = 'rgba(0, 132, 191, 0.6)';
+    } else if (about - 120 > currPos) {
+        navBar.style.backgroundColor = 'transparent';
     }
 }
 
