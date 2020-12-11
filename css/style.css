@@ -1,3 +1,14 @@
+@-webkit-keyframes leftIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px); }
+  90% {
+    opacity: .9;
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 @keyframes leftIn {
   0% {
     opacity: 0;
@@ -5,6 +16,17 @@
   90% {
     opacity: .9;
     transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@-webkit-keyframes rightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(300px); }
+  90% {
+    opacity: .9;
+    transform: translateX(-10px); }
   100% {
     opacity: 1;
     transform: translateX(0); } }
@@ -20,6 +42,17 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@-webkit-keyframes bottomIn {
+  0% {
+    opacity: 0;
+    transform: translateY(300px); }
+  90% {
+    opacity: .9;
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 @keyframes bottomIn {
   0% {
     opacity: 0;
@@ -31,6 +64,13 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(15px); } }
+
 @keyframes scroll {
   0% {
     opacity: 1; }
@@ -38,11 +78,23 @@
     opacity: 0;
     transform: translateY(15px); } }
 
+@-webkit-keyframes shakeIt {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateY(-2.5rem); } }
+
 @keyframes shakeIt {
   0% {
     transform: translateY(0); }
   25% {
     transform: translateY(-2.5rem); } }
+
+@-webkit-keyframes rotateIt {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 @keyframes rotateIt {
   from {
@@ -229,8 +281,11 @@ section {
       border-left: solid 10px #ecf0f1;
       border-top-left-radius: 50%;
       border-bottom-left-radius: 50%;
+      -webkit-animation-name: rotateIt;
       animation-name: rotateIt;
+      -webkit-animation-duration: 1.5s;
       animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite; }
   .preloader__letter {
     font-size: 4rem;
@@ -243,44 +298,76 @@ section {
     background-clip: text;
     -webkit-text-fill-color: transparent; }
     .preloader__letter--1 {
+      -webkit-animation-name: shakeIt;
       animation-name: shakeIt;
+      -webkit-animation-duration: 1.5s;
       animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
+      -webkit-animation-delay: 0s;
       animation-delay: 0s; }
     .preloader__letter--2 {
+      -webkit-animation-duration: 1.5s;
       animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
+      -webkit-animation-name: shakeIt;
       animation-name: shakeIt;
+      -webkit-animation-delay: .1s;
       animation-delay: .1s; }
     .preloader__letter--3 {
+      -webkit-animation-duration: 1.5s;
       animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
+      -webkit-animation-name: shakeIt;
       animation-name: shakeIt;
+      -webkit-animation-delay: .2s;
       animation-delay: .2s; }
     .preloader__letter--4 {
+      -webkit-animation-duration: 1.5s;
       animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
+      -webkit-animation-name: shakeIt;
       animation-name: shakeIt;
+      -webkit-animation-delay: .3s;
       animation-delay: .3s; }
     .preloader__letter--5 {
+      -webkit-animation-duration: 1.5s;
       animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
+      -webkit-animation-name: shakeIt;
       animation-name: shakeIt;
+      -webkit-animation-delay: .4s;
       animation-delay: .4s; }
     .preloader__letter--6 {
+      -webkit-animation-duration: 1.5s;
       animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
+      -webkit-animation-name: shakeIt;
       animation-name: shakeIt;
+      -webkit-animation-delay: .5s;
       animation-delay: .5s; }
     .preloader__letter--7 {
+      -webkit-animation-duration: 1.5s;
       animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
+      -webkit-animation-name: shakeIt;
       animation-name: shakeIt;
+      -webkit-animation-delay: .6s;
       animation-delay: .6s; }
     .preloader__letter--8 {
+      -webkit-animation-duration: 1.5s;
       animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
+      -webkit-animation-name: shakeIt;
       animation-name: shakeIt;
+      -webkit-animation-delay: .7s;
       animation-delay: .7s; }
 
 .btn:link, .btn:visited {
@@ -306,6 +393,7 @@ section {
   overflow: hidden;
   transition: all .3s;
   margin-top: 3rem;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 .btn-primary:hover::after {
@@ -385,8 +473,11 @@ section {
     margin-left: -4px;
     top: 8px;
     border-radius: 4px;
+    -webkit-animation-duration: 1.25s;
     animation-duration: 1.25s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
     animation-name: scroll; }
 
 .active {
@@ -496,7 +587,6 @@ section {
     /* iOS Safari */
     -webkit-user-select: none;
     /* Safari */
-    -khtml-user-select: none;
     /* Konqueror HTML */
     -moz-user-select: none;
     /* Old versions of Firefox */
@@ -523,6 +613,7 @@ section {
     display: inline-block;
     box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, 0.4);
     transition: all .2s;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     z-index: 2;
     margin-right: -10rem; }
@@ -595,6 +686,7 @@ section {
     .skills__item--front, .skills__item--back {
       height: 100%;
       width: 100%;
+      -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       position: absolute;
       top: 0;
@@ -667,6 +759,7 @@ section {
       @media only screen and (max-width: 768px) {
         .skills__item:hover .skills__item--front {
           transform: rotateY(0);
+          -webkit-animation: none;
           animation: none; } }
     .skills__item:hover .skills__item--back {
       transform: rotateY(0); }
@@ -683,6 +776,7 @@ section {
     bottom: 0;
     left: 0;
     text-align: center;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
     @media only screen and (max-width: 768px) {
       .skills__arrow {
@@ -695,6 +789,7 @@ section {
   display: flex;
   text-align: center;
   transition: all .2s;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
   @media only screen and (max-width: 768px) {
     .projects {
@@ -704,6 +799,7 @@ section {
     height: auto;
     padding: 0;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     height: 100%;
     position: relative; }
@@ -744,11 +840,13 @@ section {
       height: auto;
       transform: scale(1.3);
       transition: all .3s;
+      -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       background-color: #000; }
     .projects__box:hover .projects__box__img {
       transform: scale(1.1);
       opacity: .8;
+      -webkit-filter: blur(0.8rem);
       filter: blur(0.8rem); }
     .projects__box:hover .projects__box__description {
       opacity: 1;
@@ -802,6 +900,7 @@ section {
       transition: all .3s;
       display: inline-block;
       padding: 0;
+      -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       background-color: #fff;
       -webkit-background-clip: text;

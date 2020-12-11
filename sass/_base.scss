@@ -34,6 +34,21 @@ $laptop: 1800px;
 
 // ########### Animation ###################
 
+@-webkit-keyframes leftIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    90% {
+        opacity: .9;
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @keyframes leftIn {
     0% {
         opacity: 0;
@@ -42,6 +57,21 @@ $laptop: 1800px;
     90% {
         opacity: .9;
         transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes rightIn {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    90% {
+        opacity: .9;
+        transform: translateX(-10px);
     }
     100% {
         opacity: 1;
@@ -64,6 +94,21 @@ $laptop: 1800px;
     }
 }
 
+@-webkit-keyframes bottomIn {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    90% {
+        opacity: .9;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes bottomIn {
     0% {
         opacity: 0;
@@ -79,6 +124,16 @@ $laptop: 1800px;
     }
 }
 
+@-webkit-keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+}
+
 @keyframes scroll {
     0% {
         opacity: 1;
@@ -87,6 +142,23 @@ $laptop: 1800px;
       opacity: 0;
       transform: translateY(15px);
     }
+}
+
+
+@-webkit-keyframes shakeIt {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-2.5rem);}
+
+    // 0% {transform: translateX(2.5rem);}
+    // 100% {transform: translateY(0);}
+
+    // 0% {transform: rotate(0);}
+    // 100% {transform: rotate(360deg);}
+
+    // 0% {color: black;}
+    // 100% {color: red;}
+
+    
 }
 
 
@@ -104,6 +176,15 @@ $laptop: 1800px;
     // 100% {color: red;}
 
     
+}
+
+@-webkit-keyframes rotateIt {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes rotateIt {
