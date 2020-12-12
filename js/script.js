@@ -42,7 +42,7 @@ changeNavbarColor = (currPos) => {
 navBarBtn.addEventListener('click', function(e){
     e.preventDefault();
 
-    navBarBtn.classList.toggle('active');
+    navBarBtn.classList.toggle('active-mobi');
 })
 
 // Preloader 
@@ -52,14 +52,6 @@ window.addEventListener('load', function() {
     }, 1500)
     
 })
-
-// Init header animations
-// const initHeaderAnimations = () => {
-//     const h1 = document.querySelector('.heading-box__main').sty.display = 'block';
-//     const h2 = document.querySelector('.heading-box__secondary').sty.display = 'block';
-//     const contact = document.querySelector('#contact').sty.display = 'block';
-// }
-
 
 // Mobile sklills
 document.querySelector('#section-skills').addEventListener('click', function(e) {

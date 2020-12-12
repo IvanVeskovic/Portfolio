@@ -1,0 +1,117 @@
+// ############## About #####################
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    
+
+    &__bg-text {
+        font-weight: 700;
+        font-size: 16px;
+        color: $color-light-2;
+        position: absolute;
+        top: -8rem;
+        left: 45%;
+        transform: scale(24);
+        z-index: -1;
+        text-transform: upper;
+
+        // Disable marking bg text
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+
+        @media only screen and (max-width: $tab-land) {
+            transform: scale(19);
+        }
+
+        @media only screen and (max-width: $tab-port) {
+            transform: scale(15);
+        }
+
+        @media only screen and (max-width: $phone) {
+            transform: scale(12);
+        }
+    }
+
+    @media only screen and (max-width: $phone-sm) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    &__img {
+        // width: 15%;
+        max-width: 180px;
+        border-radius: 5px;
+        display: inline-block;
+        box-shadow: $shadow;
+        transition: all .2s;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        z-index: 2;
+        margin-right: -10rem;
+
+
+        @media only screen and (max-width: $tab-land) {
+            width: 30%;
+        }
+
+        @media only screen and (max-width: $tab-port) {
+            margin-right: -3rem;
+        }
+
+        @media only screen and (max-width: $phone-sm) {
+            margin-bottom: 2rem;
+            margin-right: 0;
+        }
+
+        &:hover {
+            transform: translateY(-1rem) scale(1.05);
+            box-shadow: 0 2rem 4rem rgba(0,0,0, .3);
+
+            @media only screen and (max-width: $phone-sm) {
+                transform: translateY(-1rem) scale(1.1);
+            }
+        }
+    }
+
+    &__container {
+        width: 60%;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+        text-indent: 4rem;
+        z-index: 2;
+
+        @media only screen and (max-width: $tab-land) {
+            font-size: 1.4rem;
+        }
+
+        @media only screen and (max-width: $phone-sm) {
+            text-align: justify;
+            font-size: 1.3rem;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+

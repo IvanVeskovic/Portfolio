@@ -1,4 +1,20 @@
-@import "base.scss";
-@import "layout.scss";
-@import "components.scss";
-@import "home.scss";
+@import 'abstract/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utility';
+
+@import 'commponents/buttons';
+@import 'commponents/preloader';
+@import 'commponents/projectBox';
+@import 'commponents/skillCard';
+
+@import 'layout/about';
+@import 'layout/contact';
+@import 'layout/footer';
+@import 'layout/navigation';
+@import 'layout/projects';
+@import 'layout/skills';
+
+@import 'pages/home';

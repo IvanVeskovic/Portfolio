@@ -1,0 +1,83 @@
+// ############## Contact #####################
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &-list {
+
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+        &__item {
+
+            display: flex;
+            align-items: center;
+            
+            &:not(:last-child) {
+                margin-right: 3rem;
+
+
+                @media only screen and (max-width: $phone) {
+                    margin-right: 1.5rem;
+                }
+
+                @media only screen and (max-width: $phone-sm) {
+                    margin-right: 1.2rem;
+
+                }
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #fff;    
+            font-size: 2rem;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width: $phone-sm) {
+                font-size: 1.7rem;
+            }
+        }
+
+        
+
+        &__link:hover &__icon {
+            transform: translateY(-4px) scale(1.1);
+        }
+
+        &__text {
+            display: inline-block;
+
+            @media only screen and (max-width: $phone-sm) {
+                display: none !important;
+            }
+        }
+
+        &__icon {
+            font-size: 4rem;
+            margin-left: 2rem;
+            transition: all .3s;
+            display: inline-block;
+            padding: 0;
+            -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+
+            background-color: #fff;
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            @media only screen and (max-width: $phone) {
+                margin-left: 1.5rem;
+                font-size: 3rem;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,164 @@
+// ############ Button #################
+
+.btn {
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $color-light;
+        display: inline-block;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        transition: all .2s;
+        border-radius: 5px;
+
+        @media only screen and (max-width: $phone) {
+                padding: .8rem 2rem; 
+            }
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: $shadow;
+        transform: translateY(-.3rem);
+    }
+
+    &:active {
+        box-shadow: $shadow-small;
+        transform: translateY(-.1rem);
+    }
+}
+
+.btn-primary { 
+    &:link,
+    &:visited {
+        border: 2px solid $color-light;
+        position: relative;
+        overflow: hidden;
+        transition: all .3s;
+        margin-top: 3rem;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -2rem;
+        top: 0;
+        height: 100%;
+        width: 0%;
+        background-color: rgba($color-light, .3);
+        transform: skewX(-19deg) scaleX(2);
+        transition: all .3s;
+    }
+}
+
+
+.btn-projects {
+
+    &:link,
+    &:visited {
+        background: linear-gradient(to right bottom, rgba($color-primary, .9), rgba($color-primary-light, .6));
+        border-radius: 5px;
+        font-size: 1.7rem;
+    }
+    
+    i {
+        font-size: 2.2rem;
+        margin-left: 1rem;
+    }
+}
+
+.nav-btn {
+    position: absolute;
+    top: 1.8rem;
+    right: 3rem;
+
+    display: none;
+
+    @media only screen and (max-width: $phone) {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;  
+    }
+
+    &__menu,
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bar {
+        width: 35px;
+        height: 2px;
+        background-color: #fff;
+        display: inline-block;
+        margin: 4px 0;
+        transition: all .2s ease-in-out;
+    }
+
+    &.active &__bar {
+
+            &--1 {
+                transform: translateX(-50px);
+                opacity: 0;
+            }   
+    
+            &--2 {
+                transform: rotate(180deg);
+                
+            }
+            &--3 {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+    }
+
+
+    // Showing mobile navigation if nav btn have class active
+    &.active-mobi + .navigation__mob-list {
+        visibility: visible;
+        max-height: 25rem;
+    }
+}
+
+.scroll-btn {
+    position: absolute;
+    left: 50%;
+
+    width: 20px;
+    height: 40px;
+    margin-left: -20px;
+    top: 85%;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 2px $color-light;
+    border-radius: 25px;
+    z-index: 1;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: $color-light;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    -webkit-animation-duration: 1.25s;
+            animation-duration: 1.25s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+            animation-name: scroll;
+  }
+}

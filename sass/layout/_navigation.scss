@@ -1,0 +1,135 @@
+// ############ Navigation ##################
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+    color: $color-light;
+    height: 6rem;
+    border-bottom: 1px solid rgba($color-light, .5);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    transition: all .3s;
+    z-index: 9000;
+    align-self: stretch;
+    font-weight: 700;
+
+    overflow: hidden;
+
+    @media only screen and (max-width: $phone) {
+
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        // background: linear-gradient(to right, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1));
+        background: rgba($color-primary, 0.9);
+    }
+
+    
+    &__logo {
+        &:link,
+        &:visited {
+            align-items: center;
+            display: flex;
+            padding: 2rem 1rem;
+            font-size: 1.4rem;
+            letter-spacing: .1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            // display: inline-block;
+            color: inherit;
+            text-decoration: none;
+            transition: all .2s;
+            height: 100%;
+
+            @media only screen and (max-width: $phone) {
+                // flex-direction: column;
+                // height: auto;
+                padding: 1rem;
+            }
+        }
+
+        &__img {
+            // display: block;
+            height: 4rem;
+        }
+        
+
+        &:hover {
+            background-color: rgba($color-light, .3);
+        }
+    }
+
+    &__list,
+    &__mob-list {
+        list-style: none;
+        align-self: stretch;
+        height: 100%;
+    }
+
+    &__list {
+        display: flex;
+
+        @media only screen and (max-width: $phone) {
+            display: none;
+        }
+    }
+
+    &__mob-list {
+        flex-direction: column;
+        display: none;
+        visibility: hidden;
+        max-height: 0;
+
+        @media only screen and (max-width: $phone) {
+            display: block;
+        }
+
+        transition: max-height .2s ease-in-out;
+    }
+
+    &__item,
+    &__mob-item {
+        border-bottom: 2px solid transparent;
+        transition: all .2s;
+        display: flex;
+        align-items: stretch;
+        padding: 0 1rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.4rem;
+
+        
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+
+        &:hover {
+            background-color: rgba($color-light, .3);
+        }
+    }
+    
+    &__link,
+    &__mob-link {
+        
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: inherit;
+            font-size: inherit;
+            letter-spacing: .2rem;
+            padding: .5rem;
+            transition: all .2s;
+            display: flex;
+            align-items: center;
+        }
+
+        &:hover,
+        &:active {
+            transform: translateY(-3px);
+        }
+    }
+}

@@ -1,0 +1,115 @@
+// ############ Heading ##################
+
+.heading-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    overflow: hidden;
+    padding: 2rem 0;
+    color: #fff;
+
+    @media only screen and (max-width: $tab-land) {
+        top: 50%;
+    }
+
+    &__main {
+        font-size: 5rem;
+        letter-spacing: .3rem;
+
+        
+        @media only screen and (max-width: $tab-land) {
+            font-size: 5rem;
+        }
+
+        @media only screen and (max-width: $phone) {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    &__main,
+    &__secondary {
+        color: $color-light;
+        font-weight: 400;
+
+        @media only screen and (max-width: $phone) {
+            color: #fff;
+        }
+    }
+
+    &__secondary {
+        font-size: 2.5rem;
+        letter-spacing: .2rem;
+
+
+        @media only screen and (max-width: $tab-land) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $phone) {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: .3rem;
+    margin-bottom: 8rem;
+    position: relative;
+    text-transform: capitalize;
+
+    @media only screen and (max-width: $phone) {
+        font-size: 3.5rem;
+    }
+
+    &--green {
+        color: $color-primary;
+        
+        &::after {
+        background-color: $color-primary;
+        }
+    }
+
+    &--white {
+            color: #fff;
+        
+        &::after {
+            background-color: #fff;
+        }
+    }
+
+    
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: .2rem;
+        width: 10rem;
+        margin-top: 2rem;
+
+        @media only screen and (max-width: $phone) {
+            font-size: 3.5rem;
+            top: 5rem;
+        }
+    }
+
+}
+
+.small-heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+}

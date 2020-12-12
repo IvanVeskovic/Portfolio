@@ -1,0 +1,10 @@
+// ############## Skills #####################
+
+.skills {
+
+    margin: 1rem;
+
+    @media only screen and (max-width: $phone) {
+        margin: .7rem;
+    }
+}

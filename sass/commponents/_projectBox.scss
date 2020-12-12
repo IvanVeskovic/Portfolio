@@ -1,0 +1,80 @@
+.projects {
+    &__box {
+
+        width: 25%;
+        height: auto;
+        padding: 0;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        height: 100%;
+        position: relative;
+        
+
+        @media only screen and (max-width: $phone) {
+            width: 50%;
+        }
+
+        
+        &__description {
+            color: $color-primary;
+            font-weight: 700;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 30;
+
+            font-size: 2rem;
+            opacity: 0;
+            visibility: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            transition: all .3s;
+        }
+
+        &__description-link {
+            margin-top: 1rem;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            font-size: inherit;
+
+            i {
+                font-size: 3rem;
+            }
+        }
+
+        &__img {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+            height: auto;
+            transform: scale(1.3);
+            transition: all .3s;
+            -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+            background-color: #000;
+        }
+
+        &:hover &__img {
+            transform: scale(1.1);  
+            opacity: .8;
+            -webkit-filter: blur(.8rem);
+                    filter: blur(.8rem);
+        }
+
+        &:hover &__description {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

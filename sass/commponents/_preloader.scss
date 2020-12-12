@@ -1,0 +1,150 @@
+// ########### Preloader ##################
+.preloader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary-light;
+    z-index: 9999;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        letter-spacing: 10px;
+        width: 30rem;
+        height: 30rem;
+        // border-radius: 50%;
+        // border: 3px solid #fff;
+        padding: 5rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 101%;
+            width: 101%;
+
+            border-left: solid 10px $color-light;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+
+            -webkit-animation-name: rotateIt;
+
+                    animation-name: rotateIt;
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+        }
+    }
+
+    &__letter{ 
+        font-size: 4rem;
+        font-weight: 700;
+        color: #fff;
+        position: relative;
+        z-index: 100;
+        background: linear-gradient(to right, $color-light, $color-light);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &--1 {
+            -webkit-animation-name: shakeIt;
+                    animation-name: shakeIt;
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-delay: 0s;
+                    animation-delay: 0s;
+        }
+
+        &--2 {
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-name: shakeIt;
+                    animation-name: shakeIt;
+            -webkit-animation-delay: .1s;
+                    animation-delay: .1s;
+        }
+
+        &--3 {
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-name: shakeIt;
+                    animation-name: shakeIt;
+            -webkit-animation-delay: .2s;
+                    animation-delay: .2s;
+
+        }
+
+        &--4 {
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-name: shakeIt;
+                    animation-name: shakeIt;
+            -webkit-animation-delay: .3s;
+                    animation-delay: .3s;
+
+        }
+
+        &--5 {
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-name: shakeIt;
+                    animation-name: shakeIt;
+            -webkit-animation-delay: .4s;
+                    animation-delay: .4s;
+
+        }
+
+        &--6 {
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-name: shakeIt;
+                    animation-name: shakeIt;
+            -webkit-animation-delay: .5s;
+                    animation-delay: .5s;
+
+        }
+
+        &--7 {
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-name: shakeIt;
+                    animation-name: shakeIt;
+            -webkit-animation-delay: .6s;
+                    animation-delay: .6s;
+
+        }
+
+        &--8 {
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-name: shakeIt;
+                    animation-name: shakeIt;
+            -webkit-animation-delay: .7s;
+                    animation-delay: .7s;
+        }
+    }
+}
