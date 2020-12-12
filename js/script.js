@@ -42,28 +42,7 @@ changeNavbarColor = (currPos) => {
 navBarBtn.addEventListener('click', function(e){
     e.preventDefault();
 
-    if(mobiNav.style.visibility === 'hidden') {
-      mobiNav.style.visibility = 'visible';
-      mobiNav.style.maxHeight = '250px';
-
-    //   Check if bars for animation have class active
-      [...bars].forEach(el => {
-        if(el.classList.contains('active')){
-            el.classList.remove('active');
-        }
-    })
-    } else {
-        mobiNav.style.visibility = 'hidden';
-        mobiNav.style.maxHeight = '0';
-
-
-    //   Check if bars for animation have class active
-        [...bars].forEach(el => {
-            if(!(el.classList.contains('active'))){
-                el.classList.add('active');
-            }
-        })
-    }
+    navBarBtn.classList.toggle('active');
 })
 
 // Preloader 
