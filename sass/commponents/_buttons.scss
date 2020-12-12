@@ -106,7 +106,7 @@
         transition: all .2s ease-in-out;
     }
 
-    &.active &__bar {
+    &.active-mobi &__bar {
 
             &--1 {
                 transform: translateX(-50px);

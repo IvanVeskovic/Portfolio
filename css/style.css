@@ -290,12 +290,12 @@ body {
     display: inline-block;
     margin: 4px 0;
     transition: all .2s ease-in-out; }
-  .nav-btn.active .nav-btn__bar--1 {
+  .nav-btn.active-mobi .nav-btn__bar--1 {
     transform: translateX(-50px);
     opacity: 0; }
-  .nav-btn.active .nav-btn__bar--2 {
+  .nav-btn.active-mobi .nav-btn__bar--2 {
     transform: rotate(180deg); }
-  .nav-btn.active .nav-btn__bar--3 {
+  .nav-btn.active-mobi .nav-btn__bar--3 {
     transform: translateX(50px);
     opacity: 0; }
   .nav-btn.active-mobi + .navigation__mob-list {

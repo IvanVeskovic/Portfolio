@@ -41,7 +41,6 @@ changeNavbarColor = (currPos) => {
 // Toggle mobile navigation
 navBarBtn.addEventListener('click', function(e){
     e.preventDefault();
-
     navBarBtn.classList.toggle('active-mobi');
 })
 
