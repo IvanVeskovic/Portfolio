@@ -505,6 +505,10 @@ body {
     opacity: 1;
     visibility: visible; }
 
+.projects p {
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
 .skills__skill-name {
   font-size: 2.5rem;
   text-transform: uppercase;
