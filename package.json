@@ -9,7 +9,7 @@
   "author": "Ivan Veskovic",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^8.0.0"
   },
   "dependencies": {}
 }
